@@ -410,6 +410,6 @@ lvgl:
                   text: "Rack"
             on_click:
               - homeassistant.service:
-                  service: light.toggle
+                  service: switch.turn_on
                   data:
-                    entity_id: light.office_network_rack
+                    entity_id: switch.study_light
