@@ -387,9 +387,9 @@ lvgl:
                   text: "Storage"
             on_click:
               - homeassistant.service:
-                  service: light.toggle
+                  service: switch.toggle
                   data:
-                    entity_id: switch.study_light
+                    entity_id: switch.tasmota_4
 
         # Network Rack
         - button: 
