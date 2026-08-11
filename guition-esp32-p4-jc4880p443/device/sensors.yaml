@@ -224,7 +224,7 @@ binary_sensor:
   # Office Storage Lights
   - platform: homeassistant
     id: office_storage_lights
-    entity_id: light.office_storage
+    entity_id: switch.tasmota_4
     trigger_on_initial_state: true
     on_state:
       then:
@@ -236,7 +236,7 @@ binary_sensor:
   # Network Rack
   - platform: homeassistant
     id: network_rack
-    entity_id: light.office_network_rack
+    entity_id: switch.study_light
     trigger_on_initial_state: true
     on_state:
       then:
