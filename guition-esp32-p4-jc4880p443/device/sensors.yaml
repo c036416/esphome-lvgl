@@ -134,7 +134,7 @@ binary_sensor:
   # Battery Charger
   - platform: homeassistant
     id: office_battery_charger
-    entity_id: switch.battery_charger
+    entity_id: switch.waterplantback
     trigger_on_initial_state: true
     on_state:
       then:

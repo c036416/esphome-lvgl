@@ -366,7 +366,7 @@ lvgl:
               - homeassistant.service:
                   service: switch.toggle
                   data:
-                    entity_id: switch.WaterPlantBack
+                    entity_id: switch.waterplantback
 
         # Storage Lights
         - button: 
