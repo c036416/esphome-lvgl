@@ -119,18 +119,7 @@ binary_sensor:
             id: print_progress_container
             hidden: !lambda return !x;
 
-  # Office Aircon
-  - platform: homeassistant
-    id: office_air_conditioner
-    entity_id: switch.office_air_conditioner
-    trigger_on_initial_state: true
-    on_state:
-      then:
-        lvgl.widget.update:
-          id: office_aircon_button
-          state:
-            checked: !lambda return x;
-
+  
   # Battery Charger
   - platform: homeassistant
     id: office_battery_charger
