@@ -39,7 +39,7 @@ api:
 
 # Enable logging
 logger:
-  levele: VERBOSE
+  level: VERBOSE
 
 # Power management
 esp_ldo:
