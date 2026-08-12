@@ -235,12 +235,12 @@ binary_sensor:
 
   # Study Light
   - platform: homeassistant
-    id: study_light
+    id: network_rack
     entity_id: switch.study_light
     trigger_on_initial_state: true
     on_state:
       then:
         lvgl.widget.update:
-          id: study_light_button
+          id: network_rack_button
           state:
             checked: !lambda return y;

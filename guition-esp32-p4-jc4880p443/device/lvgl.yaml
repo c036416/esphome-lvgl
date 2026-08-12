@@ -406,7 +406,7 @@ lvgl:
                   text: $network
               - label:
                   align: bottom_left
-                  id: study_light_label
+                  id: network_rack_label
                   text: "Study"
             on_click:
               - homeassistant.service:
