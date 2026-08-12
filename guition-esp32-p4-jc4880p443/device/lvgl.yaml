@@ -413,3 +413,25 @@ lvgl:
                   service: switch.toggle
                   data:
                     entity_id: switch.study_light
+        # Network Rack
+        - button: 
+            height: $button_height
+            width: $button_width
+            checkable: true
+            id: test_1_button
+            styles: control
+            widgets:
+              - label:
+                  text_font: $icon_font
+                  align: top_left
+                  id: network_rack_icon
+                  text: $network
+              - label:
+                  align: bottom_left
+                  id: network_rack_label
+                  text: "Stud"
+            on_click:
+              - homeassistant.service:
+                  service: switch.toggle
+                  data:
+                    entity_id: switch.study_light
