@@ -243,4 +243,4 @@ binary_sensor:
         lvgl.widget.update:
           id: network_rack_button
           state:
-            checked: !lambda return y;
+            checked: !lambda return x;
