@@ -221,7 +221,7 @@ binary_sensor:
           state:
             checked: !lambda return x;
 
-  # Office Storage Lights
+  # Study Plug
   - platform: homeassistant
     id: office_storage_lights
     entity_id: switch.tasmota_4
@@ -233,14 +233,14 @@ binary_sensor:
           state:
             checked: !lambda return x;
 
-  # Network Rack
+  # Study Light
   - platform: homeassistant
-    id: network_rack
+    id: study_light
     entity_id: switch.study_light
     trigger_on_initial_state: true
     on_state:
       then:
         lvgl.widget.update:
-          id: network_rack_button
+          id: study_light_button
           state:
-            checked: !lambda return x;
+            checked: !lambda return y;

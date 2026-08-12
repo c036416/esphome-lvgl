@@ -402,11 +402,11 @@ lvgl:
               - label:
                   text_font: $icon_font
                   align: top_left
-                  id: network_rack_icon
+                  id: study_light_icon
                   text: $network
               - label:
                   align: bottom_left
-                  id: network_rack_label
+                  id: study_light_label
                   text: "Study"
             on_click:
               - homeassistant.service:
