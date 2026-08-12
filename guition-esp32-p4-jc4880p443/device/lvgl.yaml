@@ -402,7 +402,7 @@ lvgl:
               - label:
                   text_font: $icon_font
                   align: top_left
-                  id: study_light_icon
+                  id: network_rack_icon
                   text: $network
               - label:
                   align: bottom_left
