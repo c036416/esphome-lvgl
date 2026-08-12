@@ -361,12 +361,12 @@ lvgl:
               - label:
                   align: bottom_left
                   id: battery_charger_label
-                  text: "Charger"
+                  text: "Hydro Water"
             on_click:
               - homeassistant.service:
                   service: switch.toggle
                   data:
-                    entity_id: switch.battery_charger
+                    entity_id: switch.WaterPlantsBack
 
         # Storage Lights
         - button: 
@@ -384,7 +384,7 @@ lvgl:
               - label:
                   align: bottom_left
                   id: storage_lights_label
-                  text: "Storage"
+                  text: "TasPlug"
             on_click:
               - homeassistant.service:
                   service: switch.toggle
@@ -407,7 +407,7 @@ lvgl:
               - label:
                   align: bottom_left
                   id: network_rack_label
-                  text: "Rack"
+                  text: "Study"
             on_click:
               - homeassistant.service:
                   service: switch.turn_on
