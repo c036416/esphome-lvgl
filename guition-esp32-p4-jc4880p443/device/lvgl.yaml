@@ -424,11 +424,11 @@ lvgl:
               - label:
                   text_font: $icon_font
                   align: top_left
-                  id: network_rack_icon
+                  id: network_rack_icona
                   text: $network
               - label:
                   align: bottom_left
-                  id: network_rack_label
+                  id: network_rack_labela
                   text: "Stud"
             on_click:
               - homeassistant.service:
