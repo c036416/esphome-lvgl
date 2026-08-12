@@ -410,6 +410,6 @@ lvgl:
                   text: "Study"
             on_click:
               - homeassistant.service:
-                  service: switch.turn_on
+                  service: switch.toggle
                   data:
                     entity_id: switch.study_light
