@@ -330,7 +330,7 @@ lvgl:
         - button: 
             height: $button_height
             width: $button_width
-            checkable: true
+            checkable: false
             id: office_aircon_button
             styles: control
             widgets:
